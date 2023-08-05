@@ -1,6 +1,6 @@
 # Users-Management
 A simple Dockerized app for managing users.
-This is a simple Flask application that performs CRUD (Create, Read, Update, Delete) operations on a MongoDB database for a User resource using a REST API.
+Consists of simple Flask application APIs that performs CRUD (Create, Read, Update, Delete) operations on a MongoDB database for a User resource.
 
 ## Requirements
 * Python 3.11
@@ -9,7 +9,7 @@ This is a simple Flask application that performs CRUD (Create, Read, Update, Del
 ## Setup
 1. Clone the repository:
 
-   `git clone https://github.com/your_username/users-management.git`
+   `git clone https://github.com/SarumathyPrabakaran/users-management.git`
 
    `cd users-management`
 
@@ -47,5 +47,5 @@ On Windows, use ``venv\Scripts\activate``
 
    `sudo docker run users`
 
-The application will start running on http://<ip>:5001. The url will be specified in the terminal.
+The application will start running on http://ip:5001. The url will be specified in the terminal.
 
