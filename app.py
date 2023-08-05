@@ -44,10 +44,15 @@ def get_user(id):
 @app.route('/users', methods=['POST'])
 def create_user():
     if request.method=='POST':
-        
         data = request.get_json()
-        data['_id'] = str(collection.count_documents({}) + 1)
+       
+        max_id_user = list(collection.find({}).sort("_id"))[-1]["_id"]
+        
+        print(max_id_user)
+        data['_id'] = int(max_id_user) + 1
+
         collection.insert_one(data)
+            
         return jsonify(data), 201
     return jsonify({'message': 'Invalid user data'}), 400
 
