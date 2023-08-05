@@ -8,15 +8,16 @@ This is a simple Flask application that performs CRUD (Create, Read, Update, Del
 
 ## Setup
 1. Clone the repository:
-`
-git clone https://github.com/your_username/users-management.git`
 
-`cd users-management`
+   `git clone https://github.com/your_username/users-management.git`
+
+   `cd users-management`
+
 2. Create a new Python virtual environment and activate it:
 
-`python3 -m venv venv`
+   `python3 -m venv venv`
 
-`source venv/bin/activate`  
+   `source venv/bin/activate`  
 
 On Windows, use ``venv\Scripts\activate``
 
@@ -40,11 +41,11 @@ On Windows, use ``venv\Scripts\activate``
 
 1. Build the Docker container:
 
-`sudo docker build -t users .`
+   `sudo docker build -t users .`
 
 2. Run the Docker container:
 
-`sudo docker run users`
+   `sudo docker run users`
 
 The application will start running on http://<ip>:5001. The url will be specified in the terminal.
 
