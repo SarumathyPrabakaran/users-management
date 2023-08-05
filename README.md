@@ -1,2 +1,4 @@
 # Users-Management
-A simple Microservices app for managing users.
+A simple Dockerized app for managing users.
+
+
